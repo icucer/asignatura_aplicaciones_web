@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario producto</h2>
+        <form id="formularioProductos" onsubmit="return validarFormularioJQuery()">
+            <label for="nombre_producto">Nombre del producto:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto" placeholder="Nombre del producto" required>
+
+            <label for="descripcion_producto">Descripción del producto:</label>
+            <textarea id="descripcion_producto" name="descripcion_producto" placeholder="Descripción del producto" required></textarea>
+
+            <label for="precio_producto">Precio del producto:</label>
+            <input type="number" id="precio_producto" name="precio_producto" placeholder="Precio del producto" required>
+
+            <div class="button-container">
+                <button type="submit" class="save-button">Guardar</button>
+                <button type="button" class="cancel-button" onclick="cancelarFormularioJQuery('formularioProductos')">Cancelar</button>
+            </div>
+        </form>
+        <div class="footer">
+            <p>Ion Cucer</p>
+            <img src="../../assets/img/_a90b343f-bae9-431f-b7e7-52fa044cdc4b.jpeg" alt="Imagen del pie de página" class="footer-img">
+        </div>
+    </div>
+    <script src="../../assets/js/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Crear categoría</h2>
+        <form id="formularioJS" onsubmit="return validarFormularioJS()">
+            <label for="nombre_categoria">Nombre de la categoría:</label>
+            <input type="text" id="nombre_categoria" name="nombre_categoria" placeholder="Nombre categoria" required>
+
+            <div class="button-container">
+                <button type="submit" class="save-button">Guardar</button>
+                <button type="button" class="cancel-button" onclick="cancelarFormulario('formularioJS')">Cancelar</button>
+            </div>
+        </form>
+        <div class="footer">
+            <p>Ion Cucer</p>
+            <img src="../../assets/img/_a90b343f-bae9-431f-b7e7-52fa044cdc4b.jpeg" alt="Imagen del pie de página" class="footer-img">
+        </div>
+    </div>
+    <script src="../../assets/js/validaciones.js"></script>
+</body>
+</html>
