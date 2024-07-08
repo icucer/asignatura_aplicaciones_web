@@ -29,7 +29,8 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="file"] {
     width: 95%;
     height: 35px;
     display: block;

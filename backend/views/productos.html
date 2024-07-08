@@ -12,14 +12,23 @@
     <div class="form-container">
         <h2>Formulario producto</h2>
         <form id="formularioProductos" onsubmit="return validarFormularioJQuery()">
+            <label for="productoID">ID del Producto:</label>
+            <input type="number" id="productoID" name="productoID" placeholder="ID del producto" required>
+
             <label for="nombre_producto">Nombre del producto:</label>
             <input type="text" id="nombre_producto" name="nombre_producto" placeholder="Nombre del producto" required>
+
+            <label for="imagenProducto">Imagen del Producto:</label>
+            <input type="file" id="imagenProducto" name="imagenProducto" accept="image/*" required><br>
 
             <label for="descripcion_producto">Descripción del producto:</label>
             <textarea id="descripcion_producto" name="descripcion_producto" placeholder="Descripción del producto" required></textarea>
 
             <label for="precio_producto">Precio del producto:</label>
             <input type="number" id="precio_producto" name="precio_producto" placeholder="Precio del producto" required>
+
+            <label for="categoriaProducto">Categoría:</label>
+            <input type="text" id="categoriaProducto" name="categoriaProducto" placeholder="Categoría del producto" required>
 
             <div class="button-container">
                 <button type="submit" class="save-button">Guardar</button>

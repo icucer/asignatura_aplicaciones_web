@@ -13,7 +13,8 @@ function validarFormularioJS() {
     });
 
     if (camposInvalidos.length > 0) {
-        alert("Los siguientes campos no pueden estar vacíos o contener solo espacios en blanco: " + camposInvalidos.join(', ') +"\n" + nombreCompleto);
+        alert("Los siguientes campos no pueden estar vacíos o contener solo espacios en blanco: "
+            + camposInvalidos.join(', ') +"\n" + nombreCompleto);
         return false;
     } else {
         alert("Todo esta ok! Formulario procesado \n" + nombreCompleto);
