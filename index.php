@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        "hola soi un div"
-    </div>
-</body>
-</html>
+<?php
+
+/* @autor Ion Cucer */
+
+// Ensure the autoload file is included to load the necessary classes
+require_once 'class/autoload.php';
+
+// Get the database connection instance
+$conexion = Conexion::getInstance()->getConnection();
+
+// Include the home view
+include 'views/home.html';
+?>
